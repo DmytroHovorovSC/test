@@ -1,5 +1,5 @@
-var canvasWidth = 720;
-var canvasHeight = 1280;
+var canvasWidth = 980;
+var canvasHeight = 1280 * (980/720);
 var stage
 var layer
 
@@ -32,7 +32,7 @@ function init() {
 		height: canvasHeight
 	});
 
-	alert("NEW!")
+	alert("NEW!2")
 	fitStageIntoParentContainer();
 
 	alert("should fit")
