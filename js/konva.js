@@ -116,12 +116,13 @@ function init() {
 		resRows : 4,
 		stage : stage,
 		layer : layer,
-		posX : 215,
-		posY : 420,
+		posX : 120,
+		posY : 185,
+		rotation : -10,
 		frameRate : 15,
 		blendMode : "screen",
 		scaleX : 1,
-		scaleY : 1.1
+		scaleY : 2.1
 	}
 
 	var beamYellowFirstConfig = {
@@ -230,6 +231,24 @@ function init() {
 		scaleY : 0.2
 	}
 
+	var targetRedConfig = {
+		name : "targetRed",
+		src : "assets/Atlases/base_magiccircle_jpg_0_0.jpg",
+		frames : getFrames(1500, 1500, 5, 5),
+		resWidth : 1500,
+		resHeight : 1500,
+		resColumns : 5,
+		resRows : 5,
+		stage : stage,
+		layer : layer,
+		posX : 125,
+		posY : 170,
+		frameRate : 15,
+		blendMode : "screen",
+		scaleX : 0.2,
+		scaleY : 0.2
+	}
+
 	var projectileYellowConfig = {
 		name : "projectileYellow",
 		src : "assets/Atlases/ball_explo_yellow_0_0.png",
@@ -270,6 +289,26 @@ function init() {
 		scaleY : 0.7
 	}
 
+	var projectileRedConfig = {
+		name : "projectileRed",
+		src : "assets/Atlases/ball_explo_red_0_0.png",
+		frames : ballsYellowFrames,
+		resWidth : 1315/5,
+		resHeight : 2043/9,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 175,
+		posY : 650,
+		frameRate : 15,
+		blendMode : "normal",
+		heigh : 1315/5,
+		width : 2043/9,
+		scaleX : 0.7,
+		scaleY : 0.7
+	}
+
 	var manipulateConfig = {
 		name : "manipulate",
 		src : "assets/Atlases/base_magiccircle_jpg_0_0.jpg",
@@ -291,8 +330,8 @@ function init() {
 	createSprite(bgConfig, true)
 	createSprite(witchConfig, true)
 	createSprite(beamBlueConfig, false)
-	createSprite(beamRedConfig, false)
 	createSprite(beamYellowFirstConfig, false)
+	createSprite(beamRedConfig, false)
 	initYellowBallsGroupOne(ballsYellowConfig)
 	initRedBalls(ballsRedConfig)
 	initBlueBalls(ballsBlueConfig)
@@ -303,9 +342,14 @@ function init() {
 
 	createSprite(targetYellowConfig, false)
 	createSprite(targetBlueConfig, false)
+	createSprite(targetRedConfig, false)
 	createSprite(projectileYellowConfig, true)
 	createSprite(projectileBlueConfig, true)
+	createSprite(projectileRedConfig, true)
 	createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
+
+
+
 }
 
 function delayedAnimation(sprite, animName, delay) {
@@ -785,6 +829,33 @@ aimYellow = function () {
 	sprites.get("targetYellow").show()
 }
 
+shootRed = function () {
+	var targetPos = sprites.get("targetRed").getAbsolutePosition()
+
+	var tween = new Konva.Tween({
+		node: sprites.get("projectileRed"),
+		x : targetPos.x / pageScale - 42,
+		y : targetPos.y / pageScale - 22,
+		duration: 0.4,
+		easing: Konva.Easings.EaseInOut
+	});
+	sprites.get("beamRed").hide()
+	sprites.get("targetRed").hide()
+	tween.play()
+	setTimeout(function () {
+		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0)
+		for (var i = 0; i < 9; i++) {
+			delayedAnimation(sprites.get("ballsRed" + i), 'trigger', 10 * i)
+		}
+	}, 500)
+
+}
+
+aimRed = function () {
+	sprites.get("beamRed").show()
+	sprites.get("targetRed").show()
+}
+
 shootBlue = function () {
 	var targetPos = sprites.get("targetBlue").getAbsolutePosition()
 	var tween = new Konva.Tween({
@@ -820,6 +891,10 @@ buttonShootProjectile = function () {
 			shootBlue()
 			ballLaunchState++
 			break
+		case 2:
+			shootRed()
+			ballLaunchState++
+			break
 		default:
 			break
 	}
@@ -832,6 +907,9 @@ buttonAimProjectile = function () {
 			break
 		case 1:
 			aimBlue()
+			break
+		case 2:
+			aimRed()
 			break
 		default:
 			break
