@@ -53,12 +53,12 @@ function init() {
 		resRows : 1,
 		stage : stage,
 		layer : layer,
-		posX : 0 * pageScale,
-		posY : 0 * pageScale,
+		posX : 0,
+		posY : 0,
 		frameRate : 1,
 		blendMode : "normal",
-		scaleX : 1 * pageScale,
-		scaleY : 1 * pageScale
+		scaleX : 1,
+		scaleY : 1
 	}
 
 	var witchFrames = {
@@ -75,12 +75,12 @@ function init() {
 		resRows : 12,
 		stage : stage,
 		layer : layer,
-		posX : 250 * pageScale,
-		posY : 540 * pageScale,
+		posX : 250,
+		posY : 540,
 		frameRate : 60,
 		blendMode : "normal",
-		scaleX : 1 * pageScale,
-		scaleY : 1 * pageScale
+		scaleX : 1,
+		scaleY : 1
 	}
 
 	var beamFrames = {
