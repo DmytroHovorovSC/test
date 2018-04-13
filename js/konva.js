@@ -1,5 +1,5 @@
-var stageWidth = 1000;
-var stageHeight = 2000;
+var stageWidth = 500;
+var stageHeight = 1000;
 var stage
 var layer
 var ballLaunchState = 0
@@ -10,8 +10,11 @@ function fitStageIntoParentContainer() {
 
 	// now we need to fit stage into parent
 	var containerWidth = container.offsetWidth;
+	alert("offsetWidth " + containerWidth)
 	// to do this we need to scale the stage
 	var scale = containerWidth / stageWidth;
+	alert("scale " + scale)
+
 
 	stage.width(stageWidth * scale);
 	stage.height(stageHeight * scale);
