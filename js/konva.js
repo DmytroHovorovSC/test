@@ -811,6 +811,7 @@ function createSprite(config, enabled, onTouchStart, onTouchEnd) {
 
 		if (onTouchStart) {
 			spriteObj.on('mousedown touchstart', onTouchStart)
+			alert("events created")
 		}
 		if (onTouchEnd) {
 			spriteObj.on('mouseup touchend', onTouchEnd)
