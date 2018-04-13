@@ -1,18 +1,38 @@
-var canvasWidth = 720;
-var canvasHeight = 1280;
+var stageWidth = 720;
+var stageHeight = 1280;
 var stage
 var layer
-
 var ballLaunchState = 0
+
+
+function fitStageIntoParentContainer() {
+	var container = document.querySelector('#stage-parent');
+
+	// now we need to fit stage into parent
+	var containerWidth = container.offsetWidth;
+	// to do this we need to scale the stage
+	var scale = containerWidth / stageWidth;
+
+	stage.width(stageWidth * scale);
+	stage.height(stageHeight * scale);
+	stage.scale({ x: scale, y: scale });
+	stage.draw();
+}
+
+// adapt the stage on any window resize
+window.addEventListener('resize', fitStageIntoParentContainer);
+
 
 var sprites = new Map()
 
 function init() {
 	stage = new Konva.Stage({
 		container: 'container',
-		width: canvasWidth,
-		height: canvasHeight
+		width: stageWidth,
+		height: stageHeight
 	});
+
+	fitStageIntoParentContainer();
 
 	layer = new Konva.Layer();
 
