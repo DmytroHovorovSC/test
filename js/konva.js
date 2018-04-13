@@ -271,23 +271,21 @@ function init() {
 
 	createSprite(bgConfig, true)
 	createSprite(witchConfig, true)
-	createSprite(beamBlueConfig, true)
-	createSprite(beamRedConfig, false)
-	createSprite(beamYellowFirstConfig, false)
-	// initBalls(ballsYellowConfig, 5, false)
-	initYellowBallsGroupOne(ballsYellowConfig)
-	initRedBalls(ballsRedConfig)
-	initBlueBalls(ballsBlueConfig)
-	var newYellowConfig = Object.assign({}, ballsYellowConfig)
-	newYellowConfig.name = newYellowConfig.name + "Two"
-	newYellowConfig.posY = newYellowConfig.posY - 232
-	initYellowBallsGroupTwo(newYellowConfig)
+	// createSprite(beamBlueConfig, true)
+	// createSprite(beamRedConfig, false)
+	// createSprite(beamYellowFirstConfig, false)
+	// initYellowBallsGroupOne(ballsYellowConfig)
+	// initRedBalls(ballsRedConfig)
+	// initBlueBalls(ballsBlueConfig)
+	// var newYellowConfig = Object.assign({}, ballsYellowConfig)
+	// newYellowConfig.name = newYellowConfig.name + "Two"
+	// newYellowConfig.posY = newYellowConfig.posY - 232
+	// initYellowBallsGroupTwo(newYellowConfig)
 
-	// initBalls(ballsRedConfig, 4, true)
-	createSprite(targetYellowConfig, false)
-	createSprite(targetBlueConfig, true)
-	createSprite(projectileYellowConfig, true)
-	createSprite(manipulateConfig, true, onTouchStartYellow, onTouchEndYellow)
+	// createSprite(targetYellowConfig, false)
+	// createSprite(targetBlueConfig, true)
+	// createSprite(projectileYellowConfig, true)
+	// createSprite(manipulateConfig, true, onTouchStartYellow, onTouchEndYellow)
 }
 
 function delayedAnimation(sprite, animName, delay) {
