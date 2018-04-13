@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/konva.js" afterPath="$PROJECT_DIR$/js/konva.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,13 +50,30 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="813" column="35" lean-forward="true" selection-start-line="813" selection-start-column="35" selection-end-line="813" selection-end-column="35" />
+            <state relative-caret-position="206">
+              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
-                <element signature="e#957#56822#0" expanded="false" />
-                <element signature="e#56924#806807#0" expanded="false" />
+                <element signature="e#1010#56875#0" expanded="false" />
+                <element signature="e#56977#806860#0" expanded="false" />
+                <element signature="e#806970#912579#0" expanded="false" />
+                <element signature="e#912602#1055699#0" expanded="false" />
+                <element signature="e#1055730#1056013#0" expanded="false" />
+                <element signature="e#1056042#1056339#0" expanded="false" />
+                <element signature="e#1056516#1056776#0" expanded="false" />
+                <element signature="e#1056800#1057054#0" expanded="false" />
+                <element signature="e#1057079#1057335#0" expanded="false" />
+                <element signature="e#1057363#1057663#0" expanded="false" />
+                <element signature="e#1057694#1057997#0" expanded="false" />
+                <element signature="e#1058023#1058321#0" expanded="false" />
+                <element signature="e#1058346#1058643#0" expanded="false" />
+                <element signature="e#1058675#1059008#0" expanded="false" />
+                <element signature="e#1059043#1059379#0" expanded="false" />
+                <element signature="e#1059409#1059738#0" expanded="false" />
+                <element signature="e#1059767#1060094#0" expanded="false" />
+                <element signature="e#1060120#1060420#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
                 <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
+                <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupTwo#0" expanded="false" />
               </folding>
             </state>
@@ -86,12 +104,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stage</find>
-      <find>fitStageIntoParentContainer</find>
-      <find>layer</find>
       <find>pageScale</find>
       <find>shootBlue</find>
-      <find>alert</find>
       <find>createSprite</find>
       <find>ballsBlue</find>
       <find>initBlueBalls</find>
@@ -116,6 +130,10 @@
       <find>beamYellowTwoConfig</find>
       <find>ballsRed</find>
       <find>touch</find>
+      <find>beamBlue</find>
+      <find>beamBlueConfig</find>
+      <find>alert</find>
+      <find>project</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,12 +233,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523614488445</updated>
-      <workItem from="1523614489652" duration="18565000" />
+      <workItem from="1523614489652" duration="21154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18565000" />
+    <option name="totallyTimeSpent" value="21154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
@@ -252,7 +270,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -299,13 +317,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="813" column="35" lean-forward="true" selection-start-line="813" selection-start-column="35" selection-end-line="813" selection-end-column="35" />
+        <state relative-caret-position="206">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding>
-            <element signature="e#957#56822#0" expanded="false" />
-            <element signature="e#56924#806807#0" expanded="false" />
+            <element signature="e#1010#56875#0" expanded="false" />
+            <element signature="e#56977#806860#0" expanded="false" />
+            <element signature="e#806970#912579#0" expanded="false" />
+            <element signature="e#912602#1055699#0" expanded="false" />
+            <element signature="e#1055730#1056013#0" expanded="false" />
+            <element signature="e#1056042#1056339#0" expanded="false" />
+            <element signature="e#1056516#1056776#0" expanded="false" />
+            <element signature="e#1056800#1057054#0" expanded="false" />
+            <element signature="e#1057079#1057335#0" expanded="false" />
+            <element signature="e#1057363#1057663#0" expanded="false" />
+            <element signature="e#1057694#1057997#0" expanded="false" />
+            <element signature="e#1058023#1058321#0" expanded="false" />
+            <element signature="e#1058346#1058643#0" expanded="false" />
+            <element signature="e#1058675#1059008#0" expanded="false" />
+            <element signature="e#1059043#1059379#0" expanded="false" />
+            <element signature="e#1059409#1059738#0" expanded="false" />
+            <element signature="e#1059767#1060094#0" expanded="false" />
+            <element signature="e#1060120#1060420#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
+            <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupTwo#0" expanded="false" />
           </folding>
         </state>
