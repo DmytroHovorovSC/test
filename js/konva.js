@@ -8,6 +8,9 @@ function fitStageIntoParentContainer() {
 
 	// now we need to fit stage into parent
 	var containerWidth = container.offsetWidth;
+
+	alert("container width " + containerWidth)
+
 	// to do this we need to scale the stage
 	var scale = containerWidth / canvasWidth;
 
@@ -32,10 +35,10 @@ function init() {
 		height: canvasHeight
 	});
 
-	alert("NEW!2")
+	alert("stage base width " + stage.width())
 	fitStageIntoParentContainer();
 
-	alert("should fit")
+	alert("stage scaled width " + stage.width())
 
 	layer = new Konva.Layer();
 
