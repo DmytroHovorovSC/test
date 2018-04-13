@@ -14,8 +14,8 @@ function fitStageIntoParentContainer() {
 
 	// to do this we need to scale the stage
 	pageScale = containerWidth / canvasWidth;
-	// pageScale *= 0.98;
-	pageScale *= 0.3;
+	pageScale *= 0.98;
+	// pageScale *= 0.3;
 
 	stage.width(canvasWidth * pageScale);
 	stage.height(canvasHeight * pageScale);
@@ -143,6 +143,25 @@ function init() {
 		scaleY : 1.1
 	}
 
+	var beamYellowTwoConfig = {
+		name : "beamYellowTwo",
+		src : "assets/Atlases/aiming_line_yellow_0_0.jpg",
+		frames : beamFrames,
+		resWidth : 640,
+		resHeight : 1024,
+		resColumns : 10,
+		resRows : 4,
+		stage : stage,
+		layer : layer,
+		posX : 240,
+		posY : 180,
+		rotation : 3,
+		frameRate : 15,
+		blendMode : "screen",
+		scaleX : 1,
+		scaleY : 2.1
+	}
+
 	var ballsYellowFrames = {
 		idle : getAnimationKeyFrames(1315, 2043, 5, 9, 0, 0),
 		trigger : getAnimationKeyFrames(1315, 2043, 5, 9, 1, 5*9 - 1)
@@ -207,6 +226,24 @@ function init() {
 		layer : layer,
 		posX : 219,
 		posY : 410,
+		frameRate : 30,
+		blendMode : "screen",
+		scaleX : 0.2,
+		scaleY : 0.2
+	}
+
+	var targetYellowTwoConfig = {
+		name : "targetYellowTwo",
+		src : "assets/Atlases/base_magiccircle_jpg_0_0.jpg",
+		frames : getFrames(1500, 1500, 5, 5),
+		resWidth : 1500,
+		resHeight : 1500,
+		resColumns : 5,
+		resRows : 5,
+		stage : stage,
+		layer : layer,
+		posX : 240,
+		posY : 170,
 		frameRate : 15,
 		blendMode : "screen",
 		scaleX : 0.2,
@@ -251,6 +288,26 @@ function init() {
 
 	var projectileYellowConfig = {
 		name : "projectileYellow",
+		src : "assets/Atlases/ball_explo_yellow_0_0.png",
+		frames : ballsYellowFrames,
+		resWidth : 1315/5,
+		resHeight : 2043/9,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 175,
+		posY : 650,
+		frameRate : 15,
+		blendMode : "normal",
+		heigh : 1315/5,
+		width : 2043/9,
+		scaleX : 0.7,
+		scaleY : 0.7
+	}
+
+	var projectileYellowTwoConfig = {
+		name : "projectileYellowTwo",
 		src : "assets/Atlases/ball_explo_yellow_0_0.png",
 		frames : ballsYellowFrames,
 		resWidth : 1315/5,
@@ -332,6 +389,7 @@ function init() {
 	createSprite(beamBlueConfig, false)
 	createSprite(beamYellowFirstConfig, false)
 	createSprite(beamRedConfig, false)
+	createSprite(beamYellowTwoConfig, false)
 	initYellowBallsGroupOne(ballsYellowConfig)
 	initRedBalls(ballsRedConfig)
 	initBlueBalls(ballsBlueConfig)
@@ -343,13 +401,12 @@ function init() {
 	createSprite(targetYellowConfig, false)
 	createSprite(targetBlueConfig, false)
 	createSprite(targetRedConfig, false)
+	createSprite(targetYellowTwoConfig, false)
 	createSprite(projectileYellowConfig, true)
-	createSprite(projectileBlueConfig, true)
 	createSprite(projectileRedConfig, true)
+	createSprite(projectileBlueConfig, true)
+	createSprite(projectileYellowTwoConfig, true)
 	createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
-
-
-
 }
 
 function delayedAnimation(sprite, animName, delay) {
@@ -829,6 +886,33 @@ aimYellow = function () {
 	sprites.get("targetYellow").show()
 }
 
+shootYellowTwo = function () {
+	var targetPos = sprites.get("targetYellowTwo").getAbsolutePosition()
+
+	var tween = new Konva.Tween({
+		node: sprites.get("projectileYellowTwo"),
+		x : targetPos.x / pageScale - 42,
+		y : targetPos.y / pageScale - 22,
+		duration: 0.4,
+		easing: Konva.Easings.EaseInOut
+	});
+	// alert("aim " + (targetPos.x) + " " + (targetPos.y))
+	sprites.get("beamYellowTwo").hide()
+	sprites.get("targetYellowTwo").hide()
+	tween.play()
+	setTimeout(function () {
+		delayedAnimation(sprites.get("projectileYellowTwo"), 'trigger', 0)
+		for (var i = 0; i < 6; i++) {
+			delayedAnimation(sprites.get("ballsYellowTwo" + i), 'trigger', 35 * i)
+		}
+	}, 500)
+}
+
+aimYellowTwo = function () {
+	sprites.get("beamYellowTwo").show()
+	sprites.get("targetYellowTwo").show()
+}
+
 shootRed = function () {
 	var targetPos = sprites.get("targetRed").getAbsolutePosition()
 
@@ -845,7 +929,7 @@ shootRed = function () {
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0)
 		for (var i = 0; i < 9; i++) {
-			delayedAnimation(sprites.get("ballsRed" + i), 'trigger', 10 * i)
+			delayedAnimation(sprites.get("ballsRed" + i), 'trigger', 25 * i)
 		}
 	}, 500)
 
@@ -871,7 +955,7 @@ shootBlue = function () {
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileBlue"), 'trigger', 0)
 		for (var i = 0; i < 9; i++) {
-			delayedAnimation(sprites.get("ballsBlue" + i), 'trigger', 10 * i)
+			delayedAnimation(sprites.get("ballsBlue" + i), 'trigger', 25 * i)
 		}
 	}, 500)
 }
@@ -895,6 +979,10 @@ buttonShootProjectile = function () {
 			shootRed()
 			ballLaunchState++
 			break
+		case 3:
+			shootYellowTwo()
+			ballLaunchState++
+			break
 		default:
 			break
 	}
@@ -910,6 +998,9 @@ buttonAimProjectile = function () {
 			break
 		case 2:
 			aimRed()
+			break
+		case 3:
+			aimYellowTwo()
 			break
 		default:
 			break

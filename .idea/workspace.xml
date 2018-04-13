@@ -49,8 +49,8 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="841" column="33" lean-forward="true" selection-start-line="841" selection-start-column="33" selection-end-line="841" selection-end-column="33" />
+            <state relative-caret-position="222">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#957#56822#0" expanded="false" />
                 <element signature="e#56924#806807#0" expanded="false" />
@@ -102,6 +102,19 @@
       <find>aimRed</find>
       <find>projectile</find>
       <find>projectileRed</find>
+      <find>initYellowBallsGroupTwo</find>
+      <find>newYellowConfig</find>
+      <find>projectileYellowSecondConfig</find>
+      <find>projectileYellowTwo</find>
+      <find>projectileYellow</find>
+      <find>ballsYellowTwo</find>
+      <find>ballsYellow</find>
+      <find>projectileYellowTwoConfig</find>
+      <find>targetYellowTwoConfig</find>
+      <find>beamYe</find>
+      <find>beamYellowFirst</find>
+      <find>beamYellowTwoConfig</find>
+      <find>ballsRed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,12 +214,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523614488445</updated>
-      <workItem from="1523614489652" duration="16686000" />
+      <workItem from="1523614489652" duration="18032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16686000" />
+    <option name="totallyTimeSpent" value="18032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="6" />
@@ -285,8 +298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="841" column="33" lean-forward="true" selection-start-line="841" selection-start-column="33" selection-end-line="841" selection-end-column="33" />
+        <state relative-caret-position="222">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#957#56822#0" expanded="false" />
             <element signature="e#56924#806807#0" expanded="false" />
