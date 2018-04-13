@@ -1,8 +1,5 @@
 Konva.pixelRatio = 1
 
-// data:image/png;base64,
-// data:image/jpg;base64,
-
 var canvasWidth = 512;
 var canvasHeight = 1024;
 var stage
@@ -12,10 +9,8 @@ var pageScale
 function fitStageIntoParentContainer() {
 	var container = document.querySelector('#stage-parent');
 
-	// now we need to fit stage into parent
 	var containerWidth = container.offsetWidth;
 
-	// to do this we need to scale the stage
 	pageScale = containerWidth / canvasWidth;
 	pageScale *= 0.98;
 	// pageScale *= 0.3;
@@ -25,8 +20,6 @@ function fitStageIntoParentContainer() {
 	stage.scale({ x: pageScale, y: pageScale });
 	// stage.draw();
 }
-
-// adapt the stage on any window resize
 window.addEventListener('resize', fitStageIntoParentContainer);
 
 var ballLaunchState = 0
