@@ -1,7 +1,8 @@
-var canvasWidth = 980;
-var canvasHeight = 1280 * (980/720);
+var canvasWidth = 512;
+var canvasHeight = 1024;
 var stage
 var layer
+var pageScale
 
 function fitStageIntoParentContainer() {
 	var container = document.querySelector('#stage-parent');
@@ -12,12 +13,11 @@ function fitStageIntoParentContainer() {
 	alert("container width " + containerWidth)
 
 	// to do this we need to scale the stage
-	var scale = containerWidth / canvasWidth;
+	pageScale = containerWidth / canvasWidth;
 
-
-	stage.width(canvasWidth * scale);
-	stage.height(canvasHeight * scale);
-	stage.scale({ x: scale, y: scale });
+	stage.width(canvasWidth * pageScale);
+	stage.height(canvasHeight * pageScale);
+	stage.scale({ x: scale, y: pageScale });
 	stage.draw();
 }
 
@@ -53,12 +53,12 @@ function init() {
 		resRows : 1,
 		stage : stage,
 		layer : layer,
-		posX : 0,
-		posY : 0,
+		posX : 0 * pageScale,
+		posY : 0 * pageScale,
 		frameRate : 1,
 		blendMode : "normal",
-		scaleX : 1,
-		scaleY : 1
+		scaleX : 1 * pageScale,
+		scaleY : 1 * pageScale
 	}
 
 	var witchFrames = {
@@ -75,12 +75,12 @@ function init() {
 		resRows : 12,
 		stage : stage,
 		layer : layer,
-		posX : 250,
-		posY : 540,
+		posX : 250 * pageScale,
+		posY : 540 * pageScale,
 		frameRate : 60,
 		blendMode : "normal",
-		scaleX : 1,
-		scaleY : 1
+		scaleX : 1 * pageScale,
+		scaleY : 1 * pageScale
 	}
 
 	var beamFrames = {
