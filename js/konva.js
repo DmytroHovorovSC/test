@@ -15,8 +15,8 @@ function fitStageIntoParentContainer() {
 
 	// to do this we need to scale the stage
 	pageScale = containerWidth / canvasWidth;
-	pageScale *= 0.98;
-	// pageScale *= 0.1;
+	// pageScale *= 0.98;
+	pageScale *= 0.3;
 
 	stage.width(canvasWidth * pageScale);
 	stage.height(canvasHeight * pageScale);
@@ -78,7 +78,7 @@ function init() {
 		layer : layer,
 		posX : 250,
 		posY : 540,
-		frameRate : 200,
+		frameRate : 60,
 		blendMode : "normal",
 		scaleX : 1,
 		scaleY : 1
@@ -744,18 +744,17 @@ function getAnimationKeyFrames(width, height, columns, rows, startFrame, endFram
 shootYellow = function () {
 	var targetPos = sprites.get("targetYellow").getAbsolutePosition()
 	var projPos = sprites.get("projectileYellow").getAbsolutePosition()
-	alert("p " + projPos.x + " " + projPos.y)
+	// alert("p " + projPos.x + " " + projPos.y)
 
 
 	var tween = new Konva.Tween({
 		node: sprites.get("projectileYellow"),
-		x : targetPos.x ,
-		y : targetPos.y ,
+		x : targetPos.x / pageScale - 42,
+		y : targetPos.y / pageScale - 22,
 		duration: 0.4,
 		easing: Konva.Easings.EaseInOut
 	});
-	alert("target " + targetPos.x + " " + targetPos.y)
-	alert("aim " + (targetPos.x - 42*pageScale) + " " + (targetPos.y - 22*pageScale))
+	// alert("aim " + (targetPos.x) + " " + (targetPos.y))
 	sprites.get("beamYellowFirst").hide()
 	sprites.get("targetYellow").hide()
 	tween.play()
