@@ -18,7 +18,7 @@ function fitStageIntoParentContainer() {
 	stage.width(canvasWidth * pageScale);
 	stage.height(canvasHeight * pageScale);
 	stage.scale({ x: pageScale, y: pageScale });
-	stage.draw();
+	// stage.draw();
 }
 
 // adapt the stage on any window resize
