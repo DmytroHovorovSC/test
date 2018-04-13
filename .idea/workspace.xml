@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/konva.js" afterPath="$PROJECT_DIR$/js/konva.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,9 +50,16 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="126">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <element signature="e#935#56800#0" expanded="false" />
+                <element signature="e#56902#806786#0" expanded="false" />
+                <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
+                <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
+                <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
+                <element signature="n#!!block;n#initYellowBallsGroupTwo#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +90,9 @@
     <findStrings>
       <find>stage</find>
       <find>fitStageIntoParentContainer</find>
-      <find>alert</find>
       <find>layer</find>
+      <find>alert</find>
+      <find>pageScale</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,9 +113,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="383" />
+    <option name="x" value="163" />
     <option name="y" value="23" />
-    <option name="width" value="1057" />
+    <option name="width" value="1277" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -183,18 +192,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523614488445</updated>
-      <workItem from="1523614489652" duration="9122000" />
+      <workItem from="1523614489652" duration="11376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9122000" />
+    <option name="totallyTimeSpent" value="11376000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="383" y="23" width="1057" height="821" extended-state="0" />
+    <frame x="163" y="23" width="1277" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26254827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21656051" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -267,9 +276,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="e#935#56800#0" expanded="false" />
+            <element signature="e#56902#806786#0" expanded="false" />
+            <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
+            <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
+            <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
+            <element signature="n#!!block;n#initYellowBallsGroupTwo#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

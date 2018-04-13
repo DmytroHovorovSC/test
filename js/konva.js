@@ -10,11 +10,10 @@ function fitStageIntoParentContainer() {
 	// now we need to fit stage into parent
 	var containerWidth = container.offsetWidth;
 
-	alert("container width " + containerWidth)
-
 	// to do this we need to scale the stage
 	pageScale = containerWidth / canvasWidth;
 	pageScale *= 0.98;
+	// pageScale *= 0.1;
 
 	stage.width(canvasWidth * pageScale);
 	stage.height(canvasHeight * pageScale);
@@ -36,12 +35,10 @@ function init() {
 		height: canvasHeight
 	});
 
-	alert("stage base width " + stage.width())
 	fitStageIntoParentContainer();
 
-	alert("stage scaled width " + stage.width())
-
-	layer = new Konva.FastLayer();
+	// layer = new Konva.FastLayer();
+	layer = new Konva.Layer();
 
 	var bgConfig = {
 		name : "background",
@@ -78,7 +75,7 @@ function init() {
 		layer : layer,
 		posX : 250,
 		posY : 540,
-		frameRate : 60,
+		frameRate : 200,
 		blendMode : "normal",
 		scaleX : 1,
 		scaleY : 1
@@ -98,13 +95,13 @@ function init() {
 		resRows : 4,
 		stage : stage,
 		layer : layer,
-		posX : 280,
-		posY : 230,
-		rotation : 20,
+		posX : 270,
+		posY : 207,
+		rotation : 6,
 		frameRate : 15,
 		blendMode : "screen",
 		scaleX : 1,
-		scaleY : 1.1
+		scaleY : 1.95
 	}
 
 	var beamRedConfig = {
@@ -745,13 +742,19 @@ function getAnimationKeyFrames(width, height, columns, rows, startFrame, endFram
 
 shootYellow = function () {
 	var targetPos = sprites.get("targetYellow").getAbsolutePosition()
+	var projPos = sprites.get("projectileYellow").getAbsolutePosition()
+	alert("p " + projPos.x + " " + projPos.y)
+
+
 	var tween = new Konva.Tween({
 		node: sprites.get("projectileYellow"),
-		x : targetPos.x - 42,
-		y : targetPos.y - 22,
+		x : targetPos.x ,
+		y : targetPos.y ,
 		duration: 0.4,
 		easing: Konva.Easings.EaseInOut
 	});
+	alert("target " + targetPos.x + " " + targetPos.y)
+	alert("aim " + (targetPos.x - 42*pageScale) + " " + (targetPos.y - 22*pageScale))
 	sprites.get("beamYellowFirst").hide()
 	sprites.get("targetYellow").hide()
 	tween.play()
