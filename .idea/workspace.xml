@@ -50,14 +50,13 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="303">
+              <caret line="711" column="51" lean-forward="true" selection-start-line="711" selection-start-column="51" selection-end-line="711" selection-end-column="51" />
               <folding>
-                <element signature="e#981#56846#0" expanded="false" />
-                <element signature="e#56948#806831#0" expanded="false" />
+                <element signature="e#957#56822#0" expanded="false" />
+                <element signature="e#56924#806807#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
                 <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
-                <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupTwo#0" expanded="false" />
               </folding>
             </state>
@@ -91,8 +90,14 @@
       <find>stage</find>
       <find>fitStageIntoParentContainer</find>
       <find>layer</find>
-      <find>alert</find>
       <find>pageScale</find>
+      <find>shootBlue</find>
+      <find>alert</find>
+      <find>createSprite</find>
+      <find>ballsBlue</find>
+      <find>initBlueBalls</find>
+      <find>projectileBlue</find>
+      <find>delayedAnimation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,12 +197,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523614488445</updated>
-      <workItem from="1523614489652" duration="13435000" />
+      <workItem from="1523614489652" duration="15549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13435000" />
+    <option name="totallyTimeSpent" value="15549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="163" y="23" width="1277" height="821" extended-state="0" />
@@ -276,14 +281,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="303">
+          <caret line="711" column="51" lean-forward="true" selection-start-line="711" selection-start-column="51" selection-end-line="711" selection-end-column="51" />
           <folding>
-            <element signature="e#981#56846#0" expanded="false" />
-            <element signature="e#56948#806831#0" expanded="false" />
+            <element signature="e#957#56822#0" expanded="false" />
+            <element signature="e#56924#806807#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
-            <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupTwo#0" expanded="false" />
           </folding>
         </state>

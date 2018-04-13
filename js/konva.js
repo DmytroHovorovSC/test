@@ -1,5 +1,4 @@
 Konva.pixelRatio = 1
-alert("pixelRatio = 1")
 
 var canvasWidth = 512;
 var canvasHeight = 1024;
@@ -166,7 +165,7 @@ function init() {
 	var ballsRedConfig = {
 		name : "ballsRed",
 		src : "assets/Atlases/ball_explo_red_0_0.png",
-		frames : getFrames(1315/5, 2043/9, 1, 1),
+		frames : ballsYellowFrames,
 		resWidth : 1315/5,
 		resHeight : 2043/9,
 		resColumns : 1,
@@ -175,14 +174,14 @@ function init() {
 		layer : layer,
 		posX : 156,
 		posY : 157,
-		frameRate : 10,
+		frameRate : 30,
 		blendMode : "normal"
 	}
 
 	var ballsBlueConfig = {
 		name : "ballsBlue",
 		src : "assets/Atlases/ball_explo_blue_0_0.png",
-		frames : getFrames(1315/5, 2043/9, 1, 1),
+		frames : ballsYellowFrames,
 		resWidth : 1315/5,
 		resHeight : 2043/9,
 		resColumns : 1,
@@ -191,7 +190,7 @@ function init() {
 		layer : layer,
 		posX : 156,
 		posY : 157,
-		frameRate : 10,
+		frameRate : 30,
 		blendMode : "normal"
 	}
 
@@ -251,6 +250,26 @@ function init() {
 		scaleY : 0.7
 	}
 
+	var projectileBlueConfig = {
+		name : "projectileBlue",
+		src : "assets/Atlases/ball_explo_blue_0_0.png",
+		frames : ballsYellowFrames,
+		resWidth : 1315/5,
+		resHeight : 2043/9,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 175,
+		posY : 650,
+		frameRate : 15,
+		blendMode : "normal",
+		heigh : 1315/5,
+		width : 2043/9,
+		scaleX : 0.7,
+		scaleY : 0.7
+	}
+
 	var manipulateConfig = {
 		name : "manipulate",
 		src : "assets/Atlases/base_magiccircle_jpg_0_0.jpg",
@@ -269,12 +288,9 @@ function init() {
 		scaleY : 0.45
 	}
 
-	var onTouchStartYellow = shootYellow
-	var onTouchEndYellow = aimYellow
-
 	createSprite(bgConfig, true)
 	createSprite(witchConfig, true)
-	createSprite(beamBlueConfig, true)
+	createSprite(beamBlueConfig, false)
 	createSprite(beamRedConfig, false)
 	createSprite(beamYellowFirstConfig, false)
 	initYellowBallsGroupOne(ballsYellowConfig)
@@ -286,9 +302,10 @@ function init() {
 	initYellowBallsGroupTwo(newYellowConfig)
 
 	createSprite(targetYellowConfig, false)
-	createSprite(targetBlueConfig, true)
+	createSprite(targetBlueConfig, false)
 	createSprite(projectileYellowConfig, true)
-	createSprite(manipulateConfig, true, onTouchStartYellow, onTouchEndYellow)
+	createSprite(projectileBlueConfig, true)
+	createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
 }
 
 function delayedAnimation(sprite, animName, delay) {
@@ -692,10 +709,10 @@ function createSprite(config, enabled, onTouchStart, onTouchEnd) {
 		});
 
 		if (onTouchStart) {
-			spriteObj.on('mouseup mouseleave', onTouchStart)
+			spriteObj.on('mousedown', onTouchStart)
 		}
 		if (onTouchEnd) {
-			spriteObj.on('mousedown', onTouchEnd)
+			spriteObj.on('mouseup', onTouchEnd)
 		}
 		config.layer.add(spriteObj);
 		config.stage.add(config.layer);
@@ -743,9 +760,6 @@ function getAnimationKeyFrames(width, height, columns, rows, startFrame, endFram
 
 shootYellow = function () {
 	var targetPos = sprites.get("targetYellow").getAbsolutePosition()
-	var projPos = sprites.get("projectileYellow").getAbsolutePosition()
-	// alert("p " + projPos.x + " " + projPos.y)
-
 
 	var tween = new Konva.Tween({
 		node: sprites.get("projectileYellow"),
@@ -769,4 +783,57 @@ shootYellow = function () {
 aimYellow = function () {
 	sprites.get("beamYellowFirst").show()
 	sprites.get("targetYellow").show()
+}
+
+shootBlue = function () {
+	var targetPos = sprites.get("targetBlue").getAbsolutePosition()
+	var tween = new Konva.Tween({
+		node: sprites.get("projectileBlue"),
+		x : targetPos.x / pageScale - 42,
+		y : targetPos.y / pageScale - 22,
+		duration: 0.4,
+		easing: Konva.Easings.EaseInOut
+	});
+	sprites.get("beamBlue").hide()
+	sprites.get("targetBlue").hide()
+	tween.play()
+	setTimeout(function () {
+		delayedAnimation(sprites.get("projectileBlue"), 'trigger', 0)
+		for (var i = 0; i < 9; i++) {
+			delayedAnimation(sprites.get("ballsBlue" + i), 'trigger', 10 * i)
+		}
+	}, 500)
+}
+
+aimBlue = function () {
+	sprites.get("beamBlue").show()
+	sprites.get("targetBlue").show()
+}
+
+buttonShootProjectile = function () {
+	switch(ballLaunchState) {
+		case 0:
+			shootYellow()
+			ballLaunchState++
+			break
+		case 1:
+			shootBlue()
+			ballLaunchState++
+			break
+		default:
+			break
+	}
+}
+
+buttonAimProjectile = function () {
+	switch(ballLaunchState) {
+		case 0:
+			aimYellow()
+			break
+		case 1:
+			aimBlue()
+			break
+		default:
+			break
+	}
 }
