@@ -1,5 +1,5 @@
-var stageWidth = 500;
-var stageHeight = 1000;
+var stageWidth = 980;
+var stageHeight = 980*2;
 var stage
 var layer
 var ballLaunchState = 0
