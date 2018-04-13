@@ -810,10 +810,10 @@ function createSprite(config, enabled, onTouchStart, onTouchEnd) {
 		});
 
 		if (onTouchStart) {
-			spriteObj.on('mousedown', onTouchStart)
+			spriteObj.on('mousedown touchstart', onTouchStart)
 		}
 		if (onTouchEnd) {
-			spriteObj.on('mouseup', onTouchEnd)
+			spriteObj.on('mouseup touchend', onTouchEnd)
 		}
 		config.layer.add(spriteObj);
 		config.stage.add(config.layer);
