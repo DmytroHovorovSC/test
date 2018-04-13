@@ -41,7 +41,7 @@ function init() {
 
 	alert("stage scaled width " + stage.width())
 
-	layer = new Konva.Layer();
+	layer = new Konva.FastLayer();
 
 	var bgConfig = {
 		name : "background",
