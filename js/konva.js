@@ -873,8 +873,8 @@ shootYellow = function () {
 		node: sprites.get("projectileYellow"),
 		x : targetPos.x / pageScale - 42,
 		y : targetPos.y / pageScale - 22,
-		duration: 0.4,
-		easing: Konva.Easings.EaseInOut
+		duration: 0.15,
+		easing: Konva.Easings.EaseIn
 	});
 	// alert("aim " + (targetPos.x) + " " + (targetPos.y))
 	sprites.get("beamYellowFirst").hide()
@@ -903,9 +903,9 @@ shootYellowTwo = function () {
 		y : targetPos.y / pageScale - 22,
 		offsetX : 0,
 		offsetY : 0,
-		duration: 0.4,
+		duration: 0.2,
 		// rotation : ,
-		easing: Konva.Easings.EaseInOut
+		easing: Konva.Easings.EaseIn
 	});
 	// alert("aim " + (targetPos.x) + " " + (targetPos.y))
 	sprites.get("beamYellowTwo").hide()
@@ -933,9 +933,9 @@ shootRed = function () {
 		y : targetPos.y / pageScale - 22,
 		offsetX : 0,
 		offsetY : 0,
-		duration: 0.4,
+		duration: 0.2,
 		// rotation : ,
-		easing: Konva.Easings.EaseInOut
+		easing: Konva.Easings.EaseIn
 	});
 	sprites.get("beamRed").hide()
 	sprites.get("targetRed").hide()
@@ -962,9 +962,9 @@ shootBlue = function () {
 		y : targetPos.y / pageScale - 22,
 		offsetX : 0,
 		offsetY : 0,
-		duration: 0.4,
+		duration: 0.2,
 		// rotation : ,
-		easing: Konva.Easings.EaseInOut
+		easing: Konva.Easings.EaseIn
 	});
 	sprites.get("beamBlue").hide()
 	sprites.get("targetBlue").hide()
