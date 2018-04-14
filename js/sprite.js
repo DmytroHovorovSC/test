@@ -1,6 +1,4 @@
 
-// canvas.width = 100;
-// canvas.height = 100;
 
 
 window.requestAnimFrame = (function() {
