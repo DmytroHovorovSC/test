@@ -12,8 +12,8 @@ function fitStageIntoParentContainer() {
 	var containerWidth = container.offsetWidth;
 
 	pageScale = containerWidth / canvasWidth;
-	pageScale *= 0.98;
-	// pageScale *= 0.3;
+	// pageScale *= 0.98;
+	pageScale *= 0.3;
 
 	stage.width(canvasWidth * pageScale);
 	stage.height(canvasHeight * pageScale);
@@ -79,10 +79,75 @@ function init() {
 		scaleY : 1
 	}
 
+	var vortexFrames = {
+		idle : getAnimationKeyFrames(1599, 1900, 3, 19, 0, 55)
+	}
+	var vortexBody = {
+		name : "vortexBody",
+		src : "assets/Atlases/vortex_loop_0_0.png",
+		// src : srcWitch,
+		frames : vortexFrames,
+		resWidth : 1599,
+		resHeight : 1900,
+		resColumns : 3,
+		resRows : 19,
+		stage : stage,
+		layer : layer,
+		posX : 60,
+		posY : 830,
+		frameRate : 30,
+		blendMode : "normal",
+		scaleX : 0.7,
+		scaleY : 0.7
+	}
+
+	var vortexBackFrames = {
+		idle : getAnimationKeyFrames(1160, 1150, 4, 10, 0, 38)
+	}
+	var vortexBack = {
+		name : "vortexBack",
+		src : "assets/Atlases/vortex_waveback_0_0.png",
+		// src : srcWitch,
+		frames : vortexBackFrames,
+		resWidth : 1160,
+		resHeight : 1150,
+		resColumns : 4,
+		resRows : 10,
+		stage : stage,
+		layer : layer,
+		posX : 145,
+		posY : 825,
+		frameRate : 18,
+		blendMode : "normal",
+		scaleX : 0.72,
+		scaleY : 0.72
+	}
+
+	var vortexFrontFrames = {
+		idle : getAnimationKeyFrames(1160, 1265, 4, 11, 0, 43)
+	}
+	var vortexFront = {
+		name : "vortexFront",
+		src : "assets/Atlases/vortex_wavefront_0_0.png",
+		// src : srcWitch,
+		frames : vortexFrontFrames,
+		resWidth : 1160,
+		resHeight : 1265,
+		resColumns : 4,
+		resRows : 11,
+		stage : stage,
+		layer : layer,
+		posX : 130,
+		posY : 813,
+		frameRate : 20,
+		blendMode : "normal",
+		scaleX : 0.8,
+		scaleY : 0.8
+	}
+
 	var beamFrames = {
 		idle : getAnimationKeyFrames(640, 1024, 10, 4, 0, 10*4 - 1)
 	}
-
 	var beamBlueConfig = {
 		name : "beamBlue",
 		src : srcBeamBlue,
@@ -390,6 +455,8 @@ function init() {
 	}
 
 	createSprite(bgConfig, true)
+	createSprite(vortexBack, true)
+	createSprite(vortexBody, true)
 	createSprite(witchConfig, true)
 	createSprite(beamBlueConfig, false)
 	createSprite(beamYellowFirstConfig, false)
@@ -413,6 +480,7 @@ function init() {
 	createSprite(projectileBlueConfig, true)
 	setTimeout(function () {
 		createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
+		createSprite(vortexFront, true)
 	}, 200)
 }
 
