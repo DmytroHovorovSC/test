@@ -122,7 +122,6 @@ function init() {
 		scaleX : 0.72,
 		scaleY : 0.72
 	}
-
 	var vortexFrontFrames = {
 		idle : getAnimationKeyFrames(1160, 1265, 4, 11, 0, 43)
 	}
@@ -166,7 +165,6 @@ function init() {
 		scaleX : 1,
 		scaleY : 1.95
 	}
-
 	var beamRedConfig = {
 		name : "beamRed",
 		src : srcBeamRed,
@@ -185,7 +183,6 @@ function init() {
 		scaleX : 1,
 		scaleY : 2.1
 	}
-
 	var beamYellowFirstConfig = {
 		name : "beamYellowFirst",
 		src : srcBeamYellow,
@@ -203,7 +200,6 @@ function init() {
 		scaleX : 1,
 		scaleY : 1.1
 	}
-
 	var beamYellowTwoConfig = {
 		name : "beamYellowTwo",
 		src : srcBeamYellow,
@@ -242,7 +238,6 @@ function init() {
 		frameRate : 30,
 		blendMode : "normal"
 	}
-
 	var ballsRedConfig = {
 		name : "ballsRed",
 		src : srcBallRed,
@@ -258,7 +253,6 @@ function init() {
 		frameRate : 30,
 		blendMode : "normal"
 	}
-
 	var ballsBlueConfig = {
 		name : "ballsBlue",
 		src : srcBallBlue,
@@ -294,7 +288,6 @@ function init() {
 		frameRate : 50,
 		blendMode : "normal"
 	}
-
 	var ballWithBirdRed = {
 		name : "ballWithBirdRed",
 		src : "assets/Atlases/red_owl_ball_explo_0_0.png",
@@ -310,7 +303,6 @@ function init() {
 		frameRate : 50,
 		blendMode : "normal"
 	}
-
 	var ballWithBirdBlue = {
 		name : "ballWithBirdBlue",
 		src : "assets/Atlases/blue_owl_ball_explo_0_0.png",
@@ -326,11 +318,6 @@ function init() {
 		frameRate : 50,
 		blendMode : "normal"
 	}
-
-
-
-
-
 
 	var owlYellowFrames = {
 		idle : getAnimationKeyFrames(600, 600, 3, 5, 0, 13)
@@ -354,7 +341,6 @@ function init() {
 		offsetX : 90,
 		offsetY : 90
 	}
-
 	var owlBlue = {
 		name : "owlBlue",
 		src : "assets/Atlases/lightblue_owl_0_0.png",
@@ -374,7 +360,6 @@ function init() {
 		offsetX : 90,
 		offsetY : 90
 	}
-
 	var owlRed = {
 		name : "owlRed",
 		src : "assets/Atlases/red_owl_0_0.png",
@@ -412,7 +397,6 @@ function init() {
 		scaleX : 0.2,
 		scaleY : 0.2
 	}
-
 	var targetYellowTwoConfig = {
 		name : "targetYellowTwo",
 		src : srcMagicCircle,
@@ -430,7 +414,6 @@ function init() {
 		scaleX : 0.2,
 		scaleY : 0.2
 	}
-
 	var targetBlueConfig = {
 		name : "targetBlue",
 		src : srcMagicCircle,
@@ -448,7 +431,6 @@ function init() {
 		scaleX : 0.2,
 		scaleY : 0.2
 	}
-
 	var targetRedConfig = {
 		name : "targetRed",
 		src : srcMagicCircle,
@@ -486,7 +468,6 @@ function init() {
 		scaleX : 0.7,
 		scaleY : 0.7
 	}
-
 	var projectileYellowTwoConfig = {
 		name : "projectileYellowTwo",
 		src : srcBallYellow,
@@ -509,7 +490,6 @@ function init() {
 		offsetX : 120,
 		offsetY : 120
 	}
-
 	var projectileBlueConfig = {
 		name : "projectileBlue",
 		src : srcBallBlue,
@@ -532,7 +512,6 @@ function init() {
 		offsetX : 120,
 		offsetY : 120
 	}
-
 	var projectileRedConfig = {
 		name : "projectileRed",
 		src : srcBallRed,
@@ -554,6 +533,80 @@ function init() {
 		scaleY : 0.7,
 		offsetX : 120,
 		offsetY : 120
+	}
+
+	var shotFogFrames = {
+		idle : getAnimationKeyFrames(1200, 1200, 4, 4, 1, 15)
+	}
+	var shotFogYellowConfig = {
+		name : "shotFogYellow",
+		src : "assets/Atlases/base_particles_yellow_0_0.png",
+		frames : shotFogFrames,
+		resWidth : 1200,
+		resHeight : 1200,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 175,
+		posY : 590,
+		frameRate : 40,
+		blendMode : "normal",
+		scaleX : 0.5,
+		scaleY : 0.5
+	}
+	var shotFogRedConfig = {
+		name : "shotFogRed",
+		src : "assets/Atlases/base_particles_red_0_0.png",
+		frames : shotFogFrames,
+		resWidth : 1200,
+		resHeight : 1200,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 160,
+		posY : 600,
+		rotation: -10,
+		frameRate : 40,
+		blendMode : "normal",
+		scaleX : 0.5,
+		scaleY : 0.5
+	}
+	var shotFogBlueConfig = {
+		name : "shotFogBlue",
+		src : "assets/Atlases/base_particles_blue_0_0.png",
+		frames : shotFogFrames,
+		resWidth : 1200,
+		resHeight : 1200,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 180,
+		posY : 585,
+		rotation: 4,
+		frameRate : 40,
+		blendMode : "normal",
+		scaleX : 0.5,
+		scaleY : 0.5
+	}
+	var shotFogYellowTwoConfig = {
+		name : "shotFogYellowTwo",
+		src : "assets/Atlases/base_particles_yellow_0_0.png",
+		frames : shotFogFrames,
+		resWidth : 1200,
+		resHeight : 1200,
+		resColumns : 1,
+		resRows : 1,
+		stage : stage,
+		layer : layer,
+		posX : 175,
+		posY : 590,
+		frameRate : 40,
+		blendMode : "normal",
+		scaleX : 0.5,
+		scaleY : 0.5
 	}
 
 	var manipulateConfig = {
@@ -606,6 +659,10 @@ function init() {
 	createSprite(ballWithBirdRed, true)
 	createSprite(ballWithBirdBlue, true)
 
+	createSprite(shotFogYellowConfig, false)
+	createSprite(shotFogYellowTwoConfig, false)
+	createSprite(shotFogRedConfig, false)
+	createSprite(shotFogBlueConfig, false)
 
 	setTimeout(function () {
 		createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
@@ -616,9 +673,9 @@ function init() {
 	}, 200)
 }
 
-function delayedAnimation(sprite, animName, delay) {
+function delayedAnimation(sprite, animName, delay, destroyAfter) {
 	setTimeout(function () { sprite.setAnimation(animName) }, delay)
-	setTimeout(function() { sprite.destroy() }, delay + 800)
+	setTimeout(function() { sprite.destroy() }, delay + destroyAfter)
 }
 
 function initBalls(config, triangleBase, upsideDown) {
@@ -1084,12 +1141,13 @@ shootYellow = function () {
 		animateOwl(sprites.get("owlYellow"), {x:-500, y:-500})
 	}, 800)
 	setTimeout(function () {
-		delayedAnimation(sprites.get("projectileYellow"), 'trigger', 0)
-		delayedAnimation(sprites.get("ballWithBirdYellowOne"), 'trigger', 0)
+		delayedAnimation(sprites.get("projectileYellow"), 'trigger', 0, 800)
+		delayedAnimation(sprites.get("ballWithBirdYellowOne"), 'trigger', 0, 800)
 		for (var i = 0; i < 27; i++) {
-			delayedAnimation(sprites.get("ballsYellow" + i), 'trigger', 10 * i)
+			delayedAnimation(sprites.get("ballsYellow" + i), 'trigger', 10 * i, 800)
 		}
 	}, 500)
+	playFogAnimation(sprites.get("shotFogYellow"))
 	rotateProjectile(sprites.get("projectileBlue"))
 }
 
@@ -1144,11 +1202,12 @@ shootYellowTwo = function () {
 	sprites.get("targetYellowTwo").hide()
 	tween.play()
 	setTimeout(function () {
-		delayedAnimation(sprites.get("projectileYellowTwo"), 'trigger', 0)
+		delayedAnimation(sprites.get("projectileYellowTwo"), 'trigger', 0, 800)
 		for (var i = 0; i < 6; i++) {
-			delayedAnimation(sprites.get("ballsYellowTwo" + i), 'trigger', 35 * i)
+			delayedAnimation(sprites.get("ballsYellowTwo" + i), 'trigger', 35 * i, 800)
 		}
 	}, 500)
+	playFogAnimation(sprites.get("shotFogYellowTwo"))
 }
 
 aimYellowTwo = function () {
@@ -1176,13 +1235,27 @@ shootRed = function () {
 		animateOwl(sprites.get("owlRed"), {x:1500, y:1500})
 	}, 800)
 	setTimeout(function () {
-		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0)
-		delayedAnimation(sprites.get("ballWithBirdRed"), 'trigger', 0)
+		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0, 800)
+		delayedAnimation(sprites.get("ballWithBirdRed"), 'trigger', 0, 800)
 		for (var i = 0; i < 9; i++) {
-			delayedAnimation(sprites.get("ballsRed" + i), 'trigger', 25 * i)
+			delayedAnimation(sprites.get("ballsRed" + i), 'trigger', 25 * i, 800)
 		}
 	}, 500)
 	rotateProjectile(sprites.get("projectileYellowTwo"))
+	playFogAnimation(sprites.get("shotFogRed"))
+	rotateProjectile(sprites.get("projectileBlue"))
+}
+
+function playFogAnimation(fog) {
+	fog.show()
+	delayedAnimation(fog, 'idle', 0, 500)
+	var fogTween = new Konva.Tween({
+		node: fog,
+		duration: 0.5,
+		easing: Konva.Easings.EaseIn,
+		opacity: 0
+	});
+	fogTween.play()
 }
 
 aimRed = function () {
@@ -1209,12 +1282,13 @@ shootBlue = function () {
 		animateOwl(sprites.get("owlBlue"), {x:-500, y:1500})
 	}, 800)
 	setTimeout(function () {
-		delayedAnimation(sprites.get("projectileBlue"), 'trigger', 0)
-		delayedAnimation(sprites.get("ballWithBirdBlue"), 'trigger', 0)
+		delayedAnimation(sprites.get("projectileBlue"), 'trigger', 0, 800)
+		delayedAnimation(sprites.get("ballWithBirdBlue"), 'trigger', 0, 800)
 		for (var i = 0; i < 9; i++) {
-			delayedAnimation(sprites.get("ballsBlue" + i), 'trigger', 25 * i)
+			delayedAnimation(sprites.get("ballsBlue" + i), 'trigger', 25 * i, 800)
 		}
 	}, 500)
+	playFogAnimation(sprites.get("shotFogBlue"))
 	rotateProjectile(sprites.get("projectileRed"))
 }
 
