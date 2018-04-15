@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Atlases/blue_owl_ball_explo_0_0.png" afterPath="$PROJECT_DIR$/assets/Atlases/blue_owl_ball_explo_0_0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Atlases/red_owl_ball_explo_0_0.png" afterPath="$PROJECT_DIR$/assets/Atlases/red_owl_ball_explo_0_0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Atlases/yellow_owl_ball_explo_0_0.png" afterPath="$PROJECT_DIR$/assets/Atlases/yellow_owl_ball_explo_0_0.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/konva.js" afterPath="$PROJECT_DIR$/js/konva.js" />
     </list>
@@ -53,8 +50,8 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="535" column="40" lean-forward="true" selection-start-line="535" selection-start-column="40" selection-end-line="535" selection-end-column="40" />
+            <state relative-caret-position="145">
+              <caret line="363" column="23" lean-forward="true" selection-start-line="363" selection-start-column="23" selection-end-line="363" selection-end-column="23" />
               <folding>
                 <element signature="e#833#1155#0" expanded="false" />
                 <element signature="e#1176#1237#0" expanded="false" />
@@ -78,15 +75,15 @@
                 <element signature="e#5426#5735#0" expanded="false" />
                 <element signature="e#5760#6059#0" expanded="false" />
                 <element signature="e#6085#6387#0" expanded="false" />
-                <element signature="e#6415#6715#0" expanded="false" />
-                <element signature="e#6746#7049#0" expanded="false" />
-                <element signature="e#7075#7373#0" expanded="false" />
-                <element signature="e#7398#7695#0" expanded="false" />
-                <element signature="e#7727#8060#0" expanded="false" />
-                <element signature="e#8095#8483#0" expanded="false" />
-                <element signature="e#8513#8894#0" expanded="false" />
-                <element signature="e#8923#9302#0" expanded="false" />
-                <element signature="e#9328#9628#0" expanded="false" />
+                <element signature="e#7216#7516#0" expanded="false" />
+                <element signature="e#7547#7850#0" expanded="false" />
+                <element signature="e#7876#8174#0" expanded="false" />
+                <element signature="e#8199#8496#0" expanded="false" />
+                <element signature="e#8528#8861#0" expanded="false" />
+                <element signature="e#8896#9284#0" expanded="false" />
+                <element signature="e#9314#9695#0" expanded="false" />
+                <element signature="e#9724#10103#0" expanded="false" />
+                <element signature="e#10129#10429#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
                 <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
                 <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -130,10 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>projectile</find>
-      <find>initYellowBallsGroupTwo</find>
-      <find>newYellowConfig</find>
-      <find>projectileYellowSecondConfig</find>
       <find>projectileYellowTwo</find>
       <find>projectileYellow</find>
       <find>ballsYellowTwo</find>
@@ -160,6 +153,10 @@
       <find>shootRed</find>
       <find>ballWithBirdRed</find>
       <find>ballWithBirdBlue</find>
+      <find>owlYellow</find>
+      <find>animateYellowOwl</find>
+      <find>owlRed</find>
+      <find>owlBlue</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,6 +178,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="470" />
     <option name="y" value="23" />
     <option name="width" value="933" />
     <option name="height" value="821" />
@@ -260,15 +258,15 @@
       <option name="presentableId" value="Default" />
       <updated>1523614488445</updated>
       <workItem from="1523614489652" duration="22436000" />
-      <workItem from="1523707770329" duration="11442000" />
+      <workItem from="1523707770329" duration="13578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33878000" />
+    <option name="totallyTimeSpent" value="36014000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="933" height="821" extended-state="0" />
+    <frame x="470" y="23" width="933" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29495615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -353,15 +351,15 @@
             <element signature="e#5426#5735#0" expanded="false" />
             <element signature="e#5760#6059#0" expanded="false" />
             <element signature="e#6085#6387#0" expanded="false" />
-            <element signature="e#6415#6715#0" expanded="false" />
-            <element signature="e#6746#7049#0" expanded="false" />
-            <element signature="e#7075#7373#0" expanded="false" />
-            <element signature="e#7398#7695#0" expanded="false" />
-            <element signature="e#7727#8060#0" expanded="false" />
-            <element signature="e#8095#8483#0" expanded="false" />
-            <element signature="e#8513#8894#0" expanded="false" />
-            <element signature="e#8923#9302#0" expanded="false" />
-            <element signature="e#9328#9628#0" expanded="false" />
+            <element signature="e#7216#7516#0" expanded="false" />
+            <element signature="e#7547#7850#0" expanded="false" />
+            <element signature="e#7876#8174#0" expanded="false" />
+            <element signature="e#8199#8496#0" expanded="false" />
+            <element signature="e#8528#8861#0" expanded="false" />
+            <element signature="e#8896#9284#0" expanded="false" />
+            <element signature="e#9314#9695#0" expanded="false" />
+            <element signature="e#9724#10103#0" expanded="false" />
+            <element signature="e#10129#10429#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -444,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="535" column="40" lean-forward="true" selection-start-line="535" selection-start-column="40" selection-end-line="535" selection-end-column="40" />
+        <state relative-caret-position="145">
+          <caret line="363" column="23" lean-forward="true" selection-start-line="363" selection-start-column="23" selection-end-line="363" selection-end-column="23" />
           <folding>
             <element signature="e#833#1155#0" expanded="false" />
             <element signature="e#1176#1237#0" expanded="false" />
@@ -469,15 +467,15 @@
             <element signature="e#5426#5735#0" expanded="false" />
             <element signature="e#5760#6059#0" expanded="false" />
             <element signature="e#6085#6387#0" expanded="false" />
-            <element signature="e#6415#6715#0" expanded="false" />
-            <element signature="e#6746#7049#0" expanded="false" />
-            <element signature="e#7075#7373#0" expanded="false" />
-            <element signature="e#7398#7695#0" expanded="false" />
-            <element signature="e#7727#8060#0" expanded="false" />
-            <element signature="e#8095#8483#0" expanded="false" />
-            <element signature="e#8513#8894#0" expanded="false" />
-            <element signature="e#8923#9302#0" expanded="false" />
-            <element signature="e#9328#9628#0" expanded="false" />
+            <element signature="e#7216#7516#0" expanded="false" />
+            <element signature="e#7547#7850#0" expanded="false" />
+            <element signature="e#7876#8174#0" expanded="false" />
+            <element signature="e#8199#8496#0" expanded="false" />
+            <element signature="e#8528#8861#0" expanded="false" />
+            <element signature="e#8896#9284#0" expanded="false" />
+            <element signature="e#9314#9695#0" expanded="false" />
+            <element signature="e#9724#10103#0" expanded="false" />
+            <element signature="e#10129#10429#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />

@@ -327,6 +327,59 @@ function init() {
 		blendMode : "normal"
 	}
 
+
+
+
+
+
+	var owlYellowFrames = {
+		idle : getAnimationKeyFrames(600, 600, 3, 5, 0, 13)
+	}
+	var owlYellow = {
+		name : "owlYellow",
+		src : "assets/Atlases/yellow_owl_0_0.png",
+		frames : owlYellowFrames,
+		resWidth : 600,
+		resHeight : 600,
+		resColumns : 3,
+		resRows : 5,
+		stage : stage,
+		layer : layer,
+		posX : 250,
+		posY : 340,
+		frameRate : 20,
+		blendMode : "normal",
+		scaleX : 0.1,
+		scaleY : 0.1,
+		offsetX : 90,
+		offsetY : 90
+	}
+
+	var owlBlue = {
+		name : "owlBlue",
+		src : "assets/Atlases/lightblue_owl_0_0.png",
+		frames : owlYellowFrames,
+		resWidth : 600,
+		resHeight : 600,
+		resColumns : 3,
+		resRows : 5,
+		stage : stage,
+		layer : layer,
+		posX : 340,
+		posY : 140,
+		frameRate : 20,
+		blendMode : "normal",
+		scaleX : 0.1,
+		scaleY : 0.1,
+		offsetX : 90,
+		offsetY : 90
+	}
+
+
+
+
+
+
 	var targetYellowConfig = {
 		name : "targetYellow",
 		src : srcMagicCircle,
@@ -535,9 +588,12 @@ function init() {
 	createSprite(ballWithBirdRed, true)
 	createSprite(ballWithBirdBlue, true)
 
+
 	setTimeout(function () {
 		createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
 		createSprite(vortexFront, true)
+		createSprite(owlYellow, false)
+		createSprite(owlBlue, true)
 	}, 200)
 }
 
@@ -1005,6 +1061,9 @@ shootYellow = function () {
 	sprites.get("beamYellowFirst").hide()
 	sprites.get("targetYellow").hide()
 	tween.play()
+	setTimeout(function(){
+		animateOwl(sprites.get("owlYellow"), {x:-500, y:-500})
+	}, 800)
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileYellow"), 'trigger', 0)
 		delayedAnimation(sprites.get("ballWithBirdYellowOne"), 'trigger', 0)
@@ -1018,6 +1077,34 @@ shootYellow = function () {
 aimYellow = function () {
 	sprites.get("beamYellowFirst").show()
 	sprites.get("targetYellow").show()
+}
+
+animateOwl = function (owl, moveTo) {
+	owl.show()
+	var tween = new Konva.Tween({
+		node: owl,
+		// x : 0,
+		// y : 0,
+		duration: 1,
+		easing: Konva.Easings.EaseIn,
+		scaleX : 1,
+		scaleY : 1
+	})
+	// alert("aim " + (targetPos.x) + " " + (targetPos.y))
+	tween.play()
+	setTimeout(function () {
+		var move = new Konva.Tween({
+			node: owl,
+			x : moveTo.x,
+			y : moveTo.y,
+			duration: 1,
+			easing: Konva.Easings.EaseIn,
+			onFinish : function () {
+				owl.destroy()
+			}
+		})
+		move.play()
+	}, 2100)
 }
 
 shootYellowTwo = function () {
@@ -1066,6 +1153,9 @@ shootRed = function () {
 	sprites.get("beamRed").hide()
 	sprites.get("targetRed").hide()
 	tween.play()
+	// setTimeout(function(){
+	// 	animateOwl(sprites.get("owlYellow"), {x:-500, y:-500})
+	// }, 800)
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0)
 		delayedAnimation(sprites.get("ballWithBirdRed"), 'trigger', 0)
@@ -1096,6 +1186,9 @@ shootBlue = function () {
 	sprites.get("beamBlue").hide()
 	sprites.get("targetBlue").hide()
 	tween.play()
+	setTimeout(function(){
+		animateOwl(sprites.get("owlBlue"), {x:-500, y:1500})
+	}, 800)
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileBlue"), 'trigger', 0)
 		delayedAnimation(sprites.get("ballWithBirdBlue"), 'trigger', 0)
