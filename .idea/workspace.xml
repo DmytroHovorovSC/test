@@ -50,8 +50,8 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="363" column="23" lean-forward="true" selection-start-line="363" selection-start-column="23" selection-end-line="363" selection-end-column="23" />
+            <state relative-caret-position="113">
+              <caret line="614" column="28" lean-forward="true" selection-start-line="614" selection-start-column="28" selection-end-line="614" selection-end-column="28" />
               <folding>
                 <element signature="e#833#1155#0" expanded="false" />
                 <element signature="e#1176#1237#0" expanded="false" />
@@ -75,15 +75,15 @@
                 <element signature="e#5426#5735#0" expanded="false" />
                 <element signature="e#5760#6059#0" expanded="false" />
                 <element signature="e#6085#6387#0" expanded="false" />
-                <element signature="e#7216#7516#0" expanded="false" />
-                <element signature="e#7547#7850#0" expanded="false" />
-                <element signature="e#7876#8174#0" expanded="false" />
-                <element signature="e#8199#8496#0" expanded="false" />
-                <element signature="e#8528#8861#0" expanded="false" />
-                <element signature="e#8896#9284#0" expanded="false" />
-                <element signature="e#9314#9695#0" expanded="false" />
-                <element signature="e#9724#10103#0" expanded="false" />
-                <element signature="e#10129#10429#0" expanded="false" />
+                <element signature="e#7562#7862#0" expanded="false" />
+                <element signature="e#7893#8196#0" expanded="false" />
+                <element signature="e#8222#8520#0" expanded="false" />
+                <element signature="e#8545#8842#0" expanded="false" />
+                <element signature="e#8874#9207#0" expanded="false" />
+                <element signature="e#9242#9630#0" expanded="false" />
+                <element signature="e#9660#10041#0" expanded="false" />
+                <element signature="e#10070#10449#0" expanded="false" />
+                <element signature="e#10475#10775#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
                 <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
                 <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -150,13 +150,13 @@
       <find>rotateProjectile</find>
       <find>shootYel</find>
       <find>ballWithBirdYellowOne</find>
-      <find>shootRed</find>
       <find>ballWithBirdRed</find>
       <find>ballWithBirdBlue</find>
       <find>owlYellow</find>
       <find>animateYellowOwl</find>
-      <find>owlRed</find>
       <find>owlBlue</find>
+      <find>shootRed</find>
+      <find>owlRed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -258,12 +258,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523614488445</updated>
       <workItem from="1523614489652" duration="22436000" />
-      <workItem from="1523707770329" duration="13578000" />
+      <workItem from="1523707770329" duration="14114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36014000" />
+    <option name="totallyTimeSpent" value="36550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="470" y="23" width="933" height="821" extended-state="0" />
@@ -351,15 +351,15 @@
             <element signature="e#5426#5735#0" expanded="false" />
             <element signature="e#5760#6059#0" expanded="false" />
             <element signature="e#6085#6387#0" expanded="false" />
-            <element signature="e#7216#7516#0" expanded="false" />
-            <element signature="e#7547#7850#0" expanded="false" />
-            <element signature="e#7876#8174#0" expanded="false" />
-            <element signature="e#8199#8496#0" expanded="false" />
-            <element signature="e#8528#8861#0" expanded="false" />
-            <element signature="e#8896#9284#0" expanded="false" />
-            <element signature="e#9314#9695#0" expanded="false" />
-            <element signature="e#9724#10103#0" expanded="false" />
-            <element signature="e#10129#10429#0" expanded="false" />
+            <element signature="e#7562#7862#0" expanded="false" />
+            <element signature="e#7893#8196#0" expanded="false" />
+            <element signature="e#8222#8520#0" expanded="false" />
+            <element signature="e#8545#8842#0" expanded="false" />
+            <element signature="e#8874#9207#0" expanded="false" />
+            <element signature="e#9242#9630#0" expanded="false" />
+            <element signature="e#9660#10041#0" expanded="false" />
+            <element signature="e#10070#10449#0" expanded="false" />
+            <element signature="e#10475#10775#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -442,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="363" column="23" lean-forward="true" selection-start-line="363" selection-start-column="23" selection-end-line="363" selection-end-column="23" />
+        <state relative-caret-position="113">
+          <caret line="614" column="28" lean-forward="true" selection-start-line="614" selection-start-column="28" selection-end-line="614" selection-end-column="28" />
           <folding>
             <element signature="e#833#1155#0" expanded="false" />
             <element signature="e#1176#1237#0" expanded="false" />
@@ -467,15 +467,15 @@
             <element signature="e#5426#5735#0" expanded="false" />
             <element signature="e#5760#6059#0" expanded="false" />
             <element signature="e#6085#6387#0" expanded="false" />
-            <element signature="e#7216#7516#0" expanded="false" />
-            <element signature="e#7547#7850#0" expanded="false" />
-            <element signature="e#7876#8174#0" expanded="false" />
-            <element signature="e#8199#8496#0" expanded="false" />
-            <element signature="e#8528#8861#0" expanded="false" />
-            <element signature="e#8896#9284#0" expanded="false" />
-            <element signature="e#9314#9695#0" expanded="false" />
-            <element signature="e#9724#10103#0" expanded="false" />
-            <element signature="e#10129#10429#0" expanded="false" />
+            <element signature="e#7562#7862#0" expanded="false" />
+            <element signature="e#7893#8196#0" expanded="false" />
+            <element signature="e#8222#8520#0" expanded="false" />
+            <element signature="e#8545#8842#0" expanded="false" />
+            <element signature="e#8874#9207#0" expanded="false" />
+            <element signature="e#9242#9630#0" expanded="false" />
+            <element signature="e#9660#10041#0" expanded="false" />
+            <element signature="e#10070#10449#0" expanded="false" />
+            <element signature="e#10475#10775#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />

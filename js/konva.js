@@ -375,10 +375,25 @@ function init() {
 		offsetY : 90
 	}
 
-
-
-
-
+	var owlRed = {
+		name : "owlRed",
+		src : "assets/Atlases/red_owl_0_0.png",
+		frames : owlYellowFrames,
+		resWidth : 600,
+		resHeight : 600,
+		resColumns : 3,
+		resRows : 5,
+		stage : stage,
+		layer : layer,
+		posX : 125,
+		posY : 170,
+		frameRate : 20,
+		blendMode : "normal",
+		scaleX : 0.1,
+		scaleY : 0.1,
+		offsetX : 90,
+		offsetY : 90
+	}
 
 	var targetYellowConfig = {
 		name : "targetYellow",
@@ -563,10 +578,12 @@ function init() {
 	createSprite(vortexBack, true)
 	createSprite(vortexBody, true)
 	createSprite(witchConfig, true)
+
 	createSprite(beamBlueConfig, false)
 	createSprite(beamYellowFirstConfig, false)
 	createSprite(beamRedConfig, false)
 	createSprite(beamYellowTwoConfig, false)
+
 	initYellowBallsGroupOne(ballsYellowConfig)
 	initRedBalls(ballsRedConfig)
 	initBlueBalls(ballsBlueConfig)
@@ -579,6 +596,7 @@ function init() {
 	createSprite(targetBlueConfig, false)
 	createSprite(targetRedConfig, false)
 	createSprite(targetYellowTwoConfig, false)
+
 	createSprite(projectileYellowConfig, true)
 	createSprite(projectileYellowTwoConfig, true)
 	createSprite(projectileRedConfig, true)
@@ -593,7 +611,8 @@ function init() {
 		createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
 		createSprite(vortexFront, true)
 		createSprite(owlYellow, false)
-		createSprite(owlBlue, true)
+		createSprite(owlBlue, false)
+		createSprite(owlRed, false)
 	}, 200)
 }
 
@@ -1153,9 +1172,9 @@ shootRed = function () {
 	sprites.get("beamRed").hide()
 	sprites.get("targetRed").hide()
 	tween.play()
-	// setTimeout(function(){
-	// 	animateOwl(sprites.get("owlYellow"), {x:-500, y:-500})
-	// }, 800)
+	setTimeout(function(){
+		animateOwl(sprites.get("owlRed"), {x:1500, y:1500})
+	}, 800)
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0)
 		delayedAnimation(sprites.get("ballWithBirdRed"), 'trigger', 0)
