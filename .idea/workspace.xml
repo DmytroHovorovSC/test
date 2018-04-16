@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/aiming_line_blue_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/aiming_line_red_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/aiming_line_yellow_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/ball_explo_blue_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/ball_explo_red_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/ball_explo_yellow_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/base_magiccircle_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/base_magiccircle_jpg_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/base_particles_blue_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/base_particles_red_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/base_particles_yellow_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/blue_owl_ball_explo_1_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/blue_owl_ball_explo_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/lightblue_owl_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/red_owl_ball_explo_1_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/red_owl_ball_explo_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/red_owl_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/vortex_loop_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/vortex_waveback_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/vortex_wavefront_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/witchloop_1_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/witchloop_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/yellow_owl_ball_explo_1_0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Atlases/yellow_owl_config.t3d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/sprite.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/konva.js" afterPath="$PROJECT_DIR$/js/konva.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/loadAssets.js" afterPath="$PROJECT_DIR$/js/loadAssets.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -363,12 +334,12 @@
       <updated>1523614488445</updated>
       <workItem from="1523614489652" duration="22436000" />
       <workItem from="1523707770329" duration="20770000" />
-      <workItem from="1523859781852" duration="5917000" />
+      <workItem from="1523859781852" duration="5998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49123000" />
+    <option name="totallyTimeSpent" value="49204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="23" width="1109" height="821" extended-state="0" />
