@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/konva.js" afterPath="$PROJECT_DIR$/js/konva.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="1222" column="11" lean-forward="true" selection-start-line="1222" selection-start-column="11" selection-end-line="1222" selection-end-column="11" />
+            <state relative-caret-position="342">
+              <caret line="1387" column="1150432" lean-forward="false" selection-start-line="1387" selection-start-column="1150432" selection-end-line="1387" selection-end-column="1150432" />
               <folding>
                 <element signature="e#835#1157#0" expanded="false" />
                 <element signature="e#1178#1239#0" expanded="false" />
@@ -72,7 +71,7 @@
                 <element signature="e#11073#11425#0" expanded="false" />
                 <element signature="e#11451#11804#0" expanded="false" />
                 <element signature="e#11835#12182#0" expanded="false" />
-                <element signature="e#12776#13093#0" expanded="false" />
+                <element signature="e#12806#13123#0" expanded="false" />
                 <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
                 <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
                 <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -106,7 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>project</find>
       <find>srcRedBall</find>
       <find>projectileBlue</find>
       <find>rotate</find>
@@ -136,6 +134,7 @@
       <find>vortexFront</find>
       <find>stage</find>
       <find>finalAnimation</find>
+      <find>srcFinalAnimation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -335,12 +334,12 @@
       <updated>1523614488445</updated>
       <workItem from="1523614489652" duration="22436000" />
       <workItem from="1523707770329" duration="20770000" />
-      <workItem from="1523859781852" duration="7070000" />
+      <workItem from="1523859781852" duration="7301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50276000" />
+    <option name="totallyTimeSpent" value="50507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="23" width="1109" height="821" extended-state="0" />
@@ -437,7 +436,7 @@
             <element signature="e#11073#11425#0" expanded="false" />
             <element signature="e#11451#11804#0" expanded="false" />
             <element signature="e#11835#12182#0" expanded="false" />
-            <element signature="e#12776#13093#0" expanded="false" />
+            <element signature="e#12806#13123#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -546,7 +545,7 @@
             <element signature="e#11073#11425#0" expanded="false" />
             <element signature="e#11451#11804#0" expanded="false" />
             <element signature="e#11835#12182#0" expanded="false" />
-            <element signature="e#12776#13093#0" expanded="false" />
+            <element signature="e#12806#13123#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
@@ -636,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="1222" column="11" lean-forward="true" selection-start-line="1222" selection-start-column="11" selection-end-line="1222" selection-end-column="11" />
+        <state relative-caret-position="342">
+          <caret line="1387" column="1150432" lean-forward="false" selection-start-line="1387" selection-start-column="1150432" selection-end-line="1387" selection-end-column="1150432" />
           <folding>
             <element signature="e#835#1157#0" expanded="false" />
             <element signature="e#1178#1239#0" expanded="false" />
@@ -678,7 +677,7 @@
             <element signature="e#11073#11425#0" expanded="false" />
             <element signature="e#11451#11804#0" expanded="false" />
             <element signature="e#11835#12182#0" expanded="false" />
-            <element signature="e#12776#13093#0" expanded="false" />
+            <element signature="e#12806#13123#0" expanded="false" />
             <element signature="n#!!block;n#initYellowBallsGroupOne#0" expanded="false" />
             <element signature="n#!!block;n#initRedBalls#0" expanded="false" />
             <element signature="n#!!block;n#initBlueBalls#0" expanded="false" />
