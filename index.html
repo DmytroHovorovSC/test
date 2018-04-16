@@ -644,30 +644,30 @@
 			    scaleY : 0.5
 		    }
 
-		    var finalAnimationFrames = {
-			    idle : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 0),
-			    trigger : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 76),
-			    final : getAnimationKeyFrames(2044, 4968, 7, 12, 76, 76)
-		    }
-		    var finalAnimation = {
-			    name : "finalAnimation",
-			     src : "assets/Atlases/final_animation.png",
+//		    var finalAnimationFrames = {
+//			    idle : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 0),
+//			    trigger : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 76),
+//			    final : getAnimationKeyFrames(2044, 4968, 7, 12, 76, 76)
+//		    }
+//		    var finalAnimation = {
+//			    name : "finalAnimation",
+//			     src : "assets/Atlases/final_animation.png",
 //			    src : srcFinalAnimation,
-			    frames : finalAnimationFrames,
-			    resWidth : 2044,
-			    resHeight : 4968,
-			    resColumns : 7,
-			    resRows : 12,
-			    stage : stage,
-			    layer : layer,
-			    posX : -6,
-			    posY : -20,
-			    rotation : 0,
-			    frameRate : 20,
-			    blendMode : "normal",
-			    scaleX : 1.76,
-			    scaleY : 1.76
-		    }
+//			    frames : finalAnimationFrames,
+//			    resWidth : 2044,
+//			    resHeight : 4968,
+//			    resColumns : 7,
+//			    resRows : 12,
+//			    stage : stage,
+//			    layer : layer,
+//			    posX : -6,
+//			    posY : -20,
+//			    rotation : 0,
+//			    frameRate : 20,
+//			    blendMode : "normal",
+//			    scaleX : 1.76,
+//			    scaleY : 1.76
+//		    }
 
 		    var manipulateConfig = {
 			    name : "manipulate",
@@ -737,7 +737,7 @@
 			    createSprite(owlYellow, false)
 			    createSprite(owlBlue, false)
 			    createSprite(owlRed, false)
-			    createSprite(finalAnimation, false)
+//			    createSprite(finalAnimation, false)
 		    }, 200)
 	    }
 
@@ -1249,9 +1249,9 @@
 			    }
 		    }, 210)
 		    playFogAnimation(sprites.get("shotFogYellowTwo"))
-		    sprites.get("finalAnimation").show()
-		    setTimeout(function () { sprites.get("finalAnimation").setAnimation('trigger') }, 700)
-		    setTimeout(function() { sprites.get("finalAnimation").setAnimation('final') }, 4300)
+//		    sprites.get("finalAnimation").show()
+//		    setTimeout(function () { sprites.get("finalAnimation").setAnimation('trigger') }, 700)
+//		    setTimeout(function() { sprites.get("finalAnimation").setAnimation('final') }, 4300)
 	    }
 
 	    aimYellowTwo = function () {
