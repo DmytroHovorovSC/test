@@ -1,5 +1,6 @@
-rows = 12
+rows = 6
 columns = 9
 frames = 101
-files = 1
+files = 2
 witchloop_0_0.png
+witchloop_1_0.png
