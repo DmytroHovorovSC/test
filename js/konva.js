@@ -12,8 +12,8 @@ function fitStageIntoParentContainer() {
 	var containerWidth = container.offsetWidth;
 
 	pageScale = containerWidth / canvasWidth;
-	pageScale *= 0.98;
-	// pageScale *= 0.3;
+	// pageScale *= 0.98;
+	pageScale *= 0.3;
 
 	stage.width(canvasWidth * pageScale);
 	stage.height(canvasHeight * pageScale);
@@ -619,7 +619,9 @@ function init() {
 	}
 
 	var finalAnimationFrames = {
-		idle : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 76)
+		idle : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 0),
+		trigger : getAnimationKeyFrames(2044, 4968, 7, 12, 0, 76),
+		final : getAnimationKeyFrames(2044, 4968, 7, 12, 76, 76)
 	}
 	var finalAnimation = {
 		name : "finalAnimation",
@@ -634,7 +636,7 @@ function init() {
 		posX : 0,
 		posY : -20,
 		rotation : 0,
-		frameRate : 15,
+		frameRate : 20,
 		blendMode : "normal",
 		scaleX : 1.75,
 		scaleY : 1.75
@@ -708,7 +710,7 @@ function init() {
 		createSprite(owlYellow, false)
 		createSprite(owlBlue, false)
 		createSprite(owlRed, false)
-		createSprite(finalAnimation, true)
+		createSprite(finalAnimation, false)
 	}, 200)
 }
 
@@ -1220,6 +1222,9 @@ shootYellowTwo = function () {
 		}
 	}, 210)
 	playFogAnimation(sprites.get("shotFogYellowTwo"))
+	sprites.get("finalAnimation").show()
+	setTimeout(function () { sprites.get("finalAnimation").setAnimation('trigger') }, 700)
+	setTimeout(function() { sprites.get("finalAnimation").setAnimation('final') }, 4300)
 }
 
 aimYellowTwo = function () {
