@@ -275,6 +275,58 @@ function init() {
 		blendMode : "normal"
 	}
 
+	var ballWithBirdYellowOneFrames = {
+		idle : getAnimationKeyFrames(1974, 4092, 6, 12, 0, 0),
+		trigger : getAnimationKeyFrames(1974, 4092, 6, 12, 1, 61)
+	}
+	var ballWithBirdYellowOne = {
+		name : "ballWithBirdYellowOne",
+		src : "assets/Atlases/yellow_owl_ball_explo_0_0.png",
+		frames : ballWithBirdYellowOneFrames,
+		resWidth : 1974,
+		resHeight : 4092,
+		resColumns : 6,
+		resRows : 12,
+		stage : stage,
+		layer : layer,
+		posX : 82,
+		posY : 161,
+		frameRate : 50,
+		blendMode : "normal"
+	}
+
+	var ballWithBirdRed = {
+		name : "ballWithBirdRed",
+		src : "assets/Atlases/red_owl_ball_explo_0_0.png",
+		frames : ballWithBirdYellowOneFrames,
+		resWidth : 1974,
+		resHeight : 4092,
+		resColumns : 6,
+		resRows : 12,
+		stage : stage,
+		layer : layer,
+		posX : -34,
+		posY : 6,
+		frameRate : 50,
+		blendMode : "normal"
+	}
+
+	var ballWithBirdBlue = {
+		name : "ballWithBirdBlue",
+		src : "assets/Atlases/blue_owl_ball_explo_0_0.png",
+		frames : ballWithBirdYellowOneFrames,
+		resWidth : 1974,
+		resHeight : 4092,
+		resColumns : 6,
+		resRows : 12,
+		stage : stage,
+		layer : layer,
+		posX : 170,
+		posY : 27,
+		frameRate : 50,
+		blendMode : "normal"
+	}
+
 	var targetYellowConfig = {
 		name : "targetYellow",
 		src : srcMagicCircle,
@@ -478,6 +530,11 @@ function init() {
 	createSprite(projectileYellowTwoConfig, true)
 	createSprite(projectileRedConfig, true)
 	createSprite(projectileBlueConfig, true)
+
+	createSprite(ballWithBirdYellowOne, true)
+	createSprite(ballWithBirdRed, true)
+	createSprite(ballWithBirdBlue, true)
+
 	setTimeout(function () {
 		createSprite(manipulateConfig, true, buttonAimProjectile, buttonShootProjectile)
 		createSprite(vortexFront, true)
@@ -950,6 +1007,7 @@ shootYellow = function () {
 	tween.play()
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileYellow"), 'trigger', 0)
+		delayedAnimation(sprites.get("ballWithBirdYellowOne"), 'trigger', 0)
 		for (var i = 0; i < 27; i++) {
 			delayedAnimation(sprites.get("ballsYellow" + i), 'trigger', 10 * i)
 		}
@@ -1010,6 +1068,7 @@ shootRed = function () {
 	tween.play()
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileRed"), 'trigger', 0)
+		delayedAnimation(sprites.get("ballWithBirdRed"), 'trigger', 0)
 		for (var i = 0; i < 9; i++) {
 			delayedAnimation(sprites.get("ballsRed" + i), 'trigger', 25 * i)
 		}
@@ -1039,6 +1098,7 @@ shootBlue = function () {
 	tween.play()
 	setTimeout(function () {
 		delayedAnimation(sprites.get("projectileBlue"), 'trigger', 0)
+		delayedAnimation(sprites.get("ballWithBirdBlue"), 'trigger', 0)
 		for (var i = 0; i < 9; i++) {
 			delayedAnimation(sprites.get("ballsBlue" + i), 'trigger', 25 * i)
 		}
