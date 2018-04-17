@@ -20,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="189">
+              <caret line="1374" column="25" lean-forward="true" selection-start-line="1374" selection-start-column="25" selection-end-line="1374" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -30,8 +30,8 @@
       <file leaf-file-name="konva.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/konva.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="881">
+              <caret line="412" column="22" lean-forward="false" selection-start-line="412" selection-start-column="22" selection-end-line="412" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -71,8 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ballWithBirdRed</find>
-      <find>ballWithBirdBlue</find>
       <find>owlYellow</find>
       <find>animateYellowOwl</find>
       <find>owlBlue</find>
@@ -87,11 +85,9 @@
       <find>data:image</find>
       <find>initBalls</find>
       <find>shoot</find>
-      <find>createSprite</find>
       <find>manipulateConfig</find>
       <find>vortexFront</find>
       <find>stage</find>
-      <find>finalAnimation</find>
       <find>srcOwlYellow</find>
       <find>srcOwlBlue</find>
       <find>srcOwlRed</find>
@@ -101,6 +97,10 @@
       <find>srcFinalAnimation</find>
       <find>vortex</find>
       <find>owl</find>
+      <find>finalAnimation</find>
+      <find>ontouch</find>
+      <find>createSprite</find>
+      <find>buttonAimProjectile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -307,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54655000" />
+    <option name="totallyTimeSpent" value="55295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="23" width="1109" height="821" extended-state="0" />
@@ -587,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/konva.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="881">
+          <caret line="412" column="22" lean-forward="false" selection-start-line="412" selection-start-column="22" selection-end-line="412" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -603,8 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state relative-caret-position="189">
+          <caret line="1374" column="25" lean-forward="true" selection-start-line="1374" selection-start-column="25" selection-end-line="1374" selection-end-column="25" />
           <folding />
         </state>
       </provider>
