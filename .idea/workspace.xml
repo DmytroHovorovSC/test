@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Atlases/red_owl_0_0.png" afterPath="$PROJECT_DIR$/assets/Atlases/red_owl_0_0.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -20,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="1374" column="25" lean-forward="true" selection-start-line="1374" selection-start-column="25" selection-end-line="1374" selection-end-column="25" />
+            <state relative-caret-position="122">
+              <caret line="398" column="32" lean-forward="true" selection-start-line="398" selection-start-column="32" selection-end-line="398" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -71,7 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>owlYellow</find>
       <find>animateYellowOwl</find>
       <find>owlBlue</find>
       <find>shootRed</find>
@@ -90,7 +90,6 @@
       <find>stage</find>
       <find>srcOwlYellow</find>
       <find>srcOwlBlue</find>
-      <find>srcOwlRed</find>
       <find>srcOwlBallBlue</find>
       <find>srcOwlBallYellow</find>
       <find>srcOwlBallRed</find>
@@ -101,6 +100,8 @@
       <find>ontouch</find>
       <find>createSprite</find>
       <find>buttonAimProjectile</find>
+      <find>projectileYellowTwo</find>
+      <find>srcOwlRed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -307,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55295000" />
+    <option name="totallyTimeSpent" value="56145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="331" y="23" width="1109" height="821" extended-state="0" />
@@ -603,8 +604,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="1374" column="25" lean-forward="true" selection-start-line="1374" selection-start-column="25" selection-end-line="1374" selection-end-column="25" />
+        <state relative-caret-position="122">
+          <caret line="398" column="32" lean-forward="true" selection-start-line="398" selection-start-column="32" selection-end-line="398" selection-end-column="32" />
           <folding />
         </state>
       </provider>
