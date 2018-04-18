@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9842d80-7247-4d89-b38d-5444f8c3ffe6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,48 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="793" column="101" lean-forward="true" selection-start-line="793" selection-start-column="101" selection-end-line="793" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="konva.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/konva.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6180">
-              <caret line="412" column="22" lean-forward="false" selection-start-line="412" selection-start-column="22" selection-end-line="412" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Snappable/new/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadAssets.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/loadAssets.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="142834" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="142834" />
+            <state relative-caret-position="142">
+              <caret line="793" column="99" lean-forward="true" selection-start-line="793" selection-start-column="99" selection-end-line="793" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -71,7 +30,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>delayedAnimation</find>
       <find>shotFogYellowConfig</find>
       <find>shotFogYellow</find>
       <find>shotFogRedConfig</find>
@@ -96,11 +54,12 @@
       <find>projectileYellowTwo</find>
       <find>srcOwlRed</find>
       <find>buttonAimProjectile</find>
-      <find>intro</find>
       <find>playBu</find>
       <find>playButton</find>
       <find>redirectToAppstore</find>
       <find>createSprite</find>
+      <find>soundButton</find>
+      <find>intro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,9 +70,9 @@
       <list>
         <option value="$PROJECT_DIR$/js/sprite.js" />
         <option value="$PROJECT_DIR$/js/loadAssets.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/js/konva.js" />
         <option value="$USER_HOME$/Snappable/new/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -306,12 +265,12 @@
       <workItem from="1523996032261" duration="4743000" />
       <workItem from="1524041632831" duration="501000" />
       <workItem from="1524044984245" duration="608000" />
-      <workItem from="1524053500426" duration="111000" />
+      <workItem from="1524053500426" duration="2154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66021000" />
+    <option name="totallyTimeSpent" value="68064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="158" y="23" width="1282" height="821" extended-state="0" />
@@ -562,25 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/Atlases/vortex_wavefront_config.t3d" />
     <entry file="file://$PROJECT_DIR$/js/sprite.js" />
     <entry file="file://$PROJECT_DIR$/js/canvas.js" />
     <entry file="file://$PROJECT_DIR$/assets/Atlases/vortex_waveback_config.t3d" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/loadAssets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -599,16 +543,32 @@
     </entry>
     <entry file="file://$USER_HOME$/Snappable/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="15">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="793" column="101" lean-forward="true" selection-start-line="793" selection-start-column="101" selection-end-line="793" selection-end-column="101" />
+        <state relative-caret-position="142">
+          <caret line="793" column="99" lean-forward="true" selection-start-line="793" selection-start-column="99" selection-end-line="793" selection-end-column="99" />
           <folding />
         </state>
       </provider>
